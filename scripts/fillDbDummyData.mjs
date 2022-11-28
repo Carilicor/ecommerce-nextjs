@@ -4,7 +4,7 @@ const fillDbWithDummyData = async () => {
   const dummyProductData = [
     {
       title: `Gildan Men's Ultra Cotton T-Shirt`,
-      slug: 't-shirt1',
+    slug: 't-shirt1',
       desc: '100% cotton, this classic fit preshrunk jersey knit provides unmatched comfort with each wear.',
       img: '/tshirt.jpg',
       category: 't-shirts',
@@ -94,7 +94,7 @@ const fillDbWithDummyData = async () => {
 
   try {
     const response = await axios({
-      url: 'http://localhost:3000/api/addproduct',
+      url: 'http://localhost:3001/api/addproduct',
       method: 'post',
       data: dummyProductData,
     });
